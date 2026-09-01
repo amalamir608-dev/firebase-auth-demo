@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# Firebase Authentication Demo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A small React Native and Expo learning project created to explore Firebase Authentication and understand common user-access flows.
 
-## Get started
+## Demonstrated Functionality
 
-1. Install dependencies
+- Email and password registration
+- Email and password login
+- Google sign-in
+- Password-reset emails
+- Displaying the authenticated user
+- Signing out
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+React Native, Expo, JavaScript, Expo Router, and Firebase Authentication.
 
-   ```bash
-   npx expo start
-   ```
+## Purpose
 
-In the output, you'll find options to open the app in a
+This project was built during my mobile app development internship as a focused practice application. It helped me learn how a mobile interface communicates with Firebase Authentication, handles authentication errors, and manages basic user sessions.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Run Locally
 
 ```bash
-npm run reset-project
+git clone https://github.com/amalamir608-dev/firebase-auth-demo.git
+cd firebase-auth-demo
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Copy `.env.example` to `.env.local`, add your Firebase web-app configuration values, and enable the required authentication providers in Firebase. Google sign-in also requires `google-services.json`, the correct OAuth client configuration, and a compatible development build.
 
-## Learn more
+## Note
 
-To learn more about developing your project with Expo, look at the following resources:
+This is an educational authentication demo rather than a production application. Production use would require stronger validation, protected-route handling, secure Firebase configuration restrictions, and comprehensive testing.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Author
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Developed by [Amal Amir Rashid](https://github.com/amalamir608-dev).
